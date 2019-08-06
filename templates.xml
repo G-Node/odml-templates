@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://templates.g-node.org/_resources/odmlTemplatesMain.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://templates.g-node.org/_resources/odmlTemplatesMain.xsl"?>
 <odML version="1.1">
   <section>
     <type>template</type>
     <name>Blackrock</name>
     <definition>Blackrock recording setup template.</definition>
-    <include>http://templates.g-node.org/blackrock/blackrock.xml</include>
+    <include>https://templates.g-node.org/blackrock/blackrock.xml</include>
   </section>
 
   <section>
     <type>template</type>
     <name>Datacite</name>
     <definition>Datacite template.</definition>
-    <include>http://templates.g-node.org/datacite/datacite.xml</include>
+    <include>https://templates.g-node.org/datacite/datacite.xml</include>
   </section>
 
   <section>
     <type>EEG-Setup</type>
     <name>BASIL</name>
     <definition>Brain-driven computer assistance system for people with limited mobility (BASIL) template.</definition>
-    <include>http://templates.g-node.org/eeg-setup/eeg-basil.xml</include>
+    <include>https://templates.g-node.org/eeg-setup/eeg-basil.xml</include>
   </section>
 
   <section>
     <type>EEG-Setup</type>
     <name>Car-sim</name>
     <definition>Driver attention car simulator during monotonous and dangerous traffic situations template.</definition>
-    <include>http://templates.g-node.org/eeg-setup/eeg-car-sim.xml</include>
+    <include>https://templates.g-node.org/eeg-setup/eeg-car-sim.xml</include>
   </section>
 
   <section>
     <type>EEG-Setup</type>
     <name>ERP-eeg-response</name>
     <definition>Event-Related Potentials (ERP) template.</definition>
-    <include>http://templates.g-node.org/eeg-setup/eeg-response.xml</include>
+    <include>https://templates.g-node.org/eeg-setup/eeg-response.xml</include>
   </section>
 </odML>
