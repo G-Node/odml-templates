@@ -12,9 +12,9 @@
     <!-- if there is a base url definition read it and later pass it to the sections template -->
     <xsl:variable name="repository" select="repository"/>
     <html>
-      <link href="http://templates.g-node.org/_resources/odMLIcon.ico" rel="shortcut icon"
+      <link href="https://templates.g-node.org/_resources/odMLIcon.ico" rel="shortcut icon"
             csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4="
-            livesrc="http://templates.g-node.org/_resources/odMLIcon.png" />
+            livesrc="https://templates.g-node.org/_resources/odMLIcon.png" />
       <style type="text/css">
         body { margin-left:2%; margin-top:10px; padding:0;} div { border:0px solid #888; }
 

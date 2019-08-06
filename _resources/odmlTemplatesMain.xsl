@@ -7,16 +7,16 @@
   <xsl:template match="odML">
     <html>
       <style type="text/css">
-        <link href="https://templates.g-node.org/resources/odMLIcon.ico" rel="shortcut icon"
+        <link href="https://templates.g-node.org/_resources/odMLIcon.ico" rel="shortcut icon"
               csoptsettings="AQAAAD142mNgYNBomeIwObe4IIeBgYEvyTDuaAoPw3IFiwOcndS8HR1NjO0NDPTNdIzzEzOByni+A8EQNoAAPMPEQ4="
-              livesrc="https://templates.g-node.org/resources/odMLIcon.png" />
+              livesrc="https://templates.g-node.org/_resources/odMLIcon.png" />
         body { margin:0; padding:0; height:1500px; } div { border:0px
         solid #888; }
         #contentContainer {position:absolute; left:251px; top:1px; width:80%;
         height:auto;}
       </style>
       <body>
-        <p><a href="index.html"><img src="https://templates.g-node.org/resources/odMLTitle.png" alt="" title="Home" height="128" width="707" border="0" /></a></p>
+        <p><a href="index.html"><img src="https://templates.g-node.org/_resources/odMLTitle.png" alt="" title="Home" height="128" width="707" border="0" /></a></p>
         <h1>odML - Templates</h1>
         <p>This repository contains re-usable odML templates. A general introduction to
            odML and its usage can be found at the <a href="http://www.g-node.org/odml" rel="nofollow">main odML page</a>.
