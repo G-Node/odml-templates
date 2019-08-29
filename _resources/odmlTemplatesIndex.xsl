@@ -8,9 +8,9 @@
     <html>
       <head>
         <meta charset="utf-8" />
-        <title>odML | Open metadata markup language - templates and terminologies -</title>
+        <title>odML | Open metadata markup language - Templates and Terminologies -</title>
         <meta name="description"
-              content="templates and terminologies for the storage of scientific metadata" />
+              content="Templates and Terminologies for the storage of scientific metadata" />
         <link rel="stylesheet" href="./_resources/odml_style.css" />
       </head>
 
