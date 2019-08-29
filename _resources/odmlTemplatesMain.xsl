@@ -28,7 +28,7 @@
 
         <ol>
           <xsl:if test="section">
-            <xsl:for-each select="section"><br/>
+            <xsl:for-each select="section">
               <xsl:call-template name="sectionTemplate"/>
             </xsl:for-each>
           </xsl:if>
@@ -75,12 +75,7 @@
     <!--create the list item -->
     <xsl:variable name="linkurl" select="include"/>
     <li>
-      <a  href="{$linkurl}"><xsl:value-of select="concat(type,' - type, name: ',name)"/></a><br/>
-      <ul>
-        <xsl:for-each select="section">
-          <xsl:call-template name="sectionTemplate"/>
-        </xsl:for-each>
-      </ul>
+      <a  href="{$linkurl}"><xsl:value-of select="concat(type,' - type, name: ',name)"/></a>
     </li>
   </xsl:template>
 
