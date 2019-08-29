@@ -28,8 +28,8 @@
         <div class="navWrapper">
           <navigationContainer>
             <div id="navigationContainer">
+              <hr class="fatline" />
               <p>
-                <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
                 <h2>Document info</h2>
                 <b>Author: </b><xsl:if test="author"><xsl:value-of select="author"/></xsl:if><br/>
                 <b>Date: </b><xsl:if test="date"><xsl:value-of select="date"/></xsl:if><br/>
@@ -37,7 +37,7 @@
                 <b>Repository: </b><xsl:if test="repository"><xsl:value-of select="repository"/></xsl:if><br/>
               </p>
 
-              <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
+              <hr class="fatline" />
 
               <h2>Structure</h2>
               <font size ="-1" >
@@ -56,7 +56,7 @@
             </div>
 
             <div id="contentContainer">
-              <hr style="color:yellow; background-color:#336699; height:4px; margin-right:0; text-align:right; border:1px dashed black;"/>
+              <hr class="fatline" />
               <h2>Content</h2>
               <!-- apply the section template  -->
               <xsl:if test="section">
@@ -163,7 +163,8 @@
           </table>
         </xsl:if>
         <a href="#top"><tiny>top</tiny></a>
-        <hr style="background-color:#336699; height:1px; margin-right:0; text-align:right;"/>
+
+        <hr class="thinline" />
         <!--  recursive call if there are subsections  -->
         <xsl:if test="section">
           <xsl:for-each select="section">

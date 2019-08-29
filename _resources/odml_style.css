@@ -525,6 +525,22 @@ hr {
     margin: 0 0 20px
 }
 
+hr.fatline {
+    color: yellow;
+    background-color: #336699;
+    height: 4px;
+    margin-right: 0;
+    text-align: right;
+    border: 1px dashed black;
+}
+
+hr.thinline {
+    background-color: #336699;
+    height: 1px;
+    margin-right: 0;
+    text-align: right;
+}
+
 dt {
     color: #444;
     font-weight: 700
