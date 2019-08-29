@@ -7,7 +7,7 @@ footer,
 header,
 hgroup,
 nav,
-section,
+sec,
 summary {
     display: block
 }
@@ -458,7 +458,7 @@ strong {
     position: relative
 }
 
-section img {
+sec img {
     max-width: 100%
 }
 
@@ -651,7 +651,7 @@ header p {
     display: block;
 }
 
-section {
+sec {
     width: 590px;
     padding: 30px 30px 50px 30px;
     margin: 20px 0;
@@ -738,12 +738,12 @@ screen and (max-width: 1060px) {
         display: none
     }
     header,
-    section,
+    sec,
     footer {
         float: none
     }
     header h1,
-    section h1,
+    sec h1,
     footer h1 {
         white-space: nowrap;
         overflow: hidden;
@@ -760,7 +760,7 @@ screen and (max-width: 1060px) {
     #banner #logo {
         margin-right: 15px
     }
-    section {
+    sec {
         border: 1px solid #e5e5e5;
         border-width: 1px 0;
         padding: 20px auto;
@@ -807,7 +807,7 @@ screen and (max-width: 720px) {
         position: fixed;
         left: 20px
     }
-    section {
+    sec {
         margin-top: 130px;
         margin-bottom: 0px;
         width: auto
@@ -833,7 +833,7 @@ screen and (max-width: 480px) {
         -o-text-overflow: ellipsis;
         -ms-text-overflow: ellipsis
     }
-    section {
+    sec {
         margin-top: 5px
     }
     #banner {
