@@ -43,16 +43,15 @@
               <font size ="-1" >
                 <xsl:if test="section">
                   <xsl:for-each select="section">
-                    <li>
-                      <xsl:call-template name="sectionTemplate">
-                        <xsl:with-param name="navigation">1</xsl:with-param>
-                        <xsl:with-param name="anchorBase">Sec</xsl:with-param>
-                        <xsl:with-param name="url" select="$repository"/>
-                      </xsl:call-template>
-                    </li>
+                    <xsl:call-template name="sectionTemplate">
+                      <xsl:with-param name="navigation">1</xsl:with-param>
+                      <xsl:with-param name="anchorBase">Sec</xsl:with-param>
+                      <xsl:with-param name="url" select="$repository"/>
+                    </xsl:call-template>
                   </xsl:for-each>
                 </xsl:if>
               </font>
+              <br/>
             </div>
 
             <div id="contentContainer">
@@ -98,7 +97,7 @@
       <!--  fill the navigation container if this is the task (navigation param = 1) -->
       <xsl:when test="$navigation = 1">
         <!-- create a link to the anchor in the content container  -->
-        <ol style="compact">
+        <ol class="nested">
           <font size="normal"><a href="#{$anchorName}">
             <xsl:value-of select="name"/> (type: <xsl:value-of select="type"/>)
           </a></font>
