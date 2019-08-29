@@ -651,6 +651,11 @@ header p {
     display: block;
 }
 
+.navWrapper {
+    margin-top: 190px;
+    position: relative
+}
+
 sec {
     width: 800px;
     padding: 30px 30px 50px 30px;
