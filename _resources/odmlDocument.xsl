@@ -18,6 +18,7 @@
         <meta name="description"
               content="Templates and Terminologies for the storage of scientific metadata" />
         <link rel="stylesheet" href="../_resources/odml_style.css" />
+        <link rel="icon" href="../_resources/odMLIcon.png" />
       </head>
 
       <body>
