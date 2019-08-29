@@ -22,7 +22,7 @@
 
       <body>
         <header>
-          <h1>odML metadata template</h1>
+          <h1><a class="white" href="https://templates.g-node.org/templates.xml">odML metadata template</a></h1>
         </header>
 
         <div class="navWrapper">
