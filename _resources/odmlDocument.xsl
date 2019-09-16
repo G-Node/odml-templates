@@ -138,6 +138,7 @@
               <th><font size="+1" color="white"><b>Value</b></font></th>
               <th><font size="+1" color="white"><b>Unit</b></font></th>
               <th><font size="+1" color="white"><b>Type</b></font></th>
+              <th><font size="+1" color="white"><b>Uncertainty</b></font></th>
               <th><font size="+1" color="white"><b>Definition</b></font></th>
               <th><font size="+1" color="white"><b>Dependency</b></font></th>
               <th><font size="+1" color="white"><b>Dependency Value</b></font></th>
@@ -153,6 +154,7 @@
                 <td width="10%"><p><xsl:value-of select="value"/></p></td>
                 <td width="5%"><p><xsl:value-of select="unit"/><br/></p></td>
                 <td width="5%"><p><xsl:value-of select="type"/></p></td>
+                <td width="5%"><p><xsl:value-of select="uncertainty"/><br/></p></td>
                 <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
                 <td width="5%"><p><xsl:value-of select="dependency"/></p></td>
                 <td width="5%"><p><xsl:value-of select="dependencyValue"/></p></td>
