@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://templates.g-node.org/_resources/odmlTemplatesIndex.xsl"?>
 <odML version="1.1">
+  <version>1.0</version>
+  <date>2019-09-17</date>
+  <author>German Neuroinformatics Node</author>
+
   <section>
     <type>template</type>
     <name>Blackrock</name>
