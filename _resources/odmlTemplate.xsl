@@ -3,7 +3,9 @@
                 xmlns:fn="http://www.w3.org/2005/02/xpath-functions"
                 xmlns:odml="http://www.g-node.org/odml">
 
-  <!-- This stylesheet is meant to view an odML document in a web browser -->
+  <!-- This stylesheet is meant to view odml-templates in a web browser -->
+  <!-- Please note: only template related elements will be displayed -->
+  <!-- Elements like uncertainty, id or value will not be shown -->
   <!-- ************************************************  -->
   <!--                   root template                   -->
   <xsl:template match="odML">
@@ -12,16 +14,16 @@
     <html>
       <head>
         <meta charset="utf-8" />
-        <title>odML | The Open metaData Markup Language</title>
+        <title>odML | Open metadata markup language - Templates and Terminologies -</title>
         <meta name="description"
-              content="Markup language for the storage of scientific metadata" />
+              content="Templates and Terminologies for the storage of scientific metadata" />
         <link rel="stylesheet" href="https://templates.g-node.org/_resources/odml_style.css" />
         <link rel="icon" href="https://templates.g-node.org/_resources/odMLIcon.ico" />
       </head>
 
       <body>
         <header>
-          <h1><a class="white" href="https://templates.g-node.org/templates.xml">odML metadata document</a></h1>
+          <h1><a class="white" href="https://templates.g-node.org/templates.xml">odML metadata template</a></h1>
         </header>
 
         <div class="navWrapper">
@@ -138,7 +140,6 @@
               <th><font size="+1" color="white"><b>Value</b></font></th>
               <th><font size="+1" color="white"><b>Unit</b></font></th>
               <th><font size="+1" color="white"><b>Type</b></font></th>
-              <th><font size="+1" color="white"><b>Uncertainty</b></font></th>
               <th><font size="+1" color="white"><b>Definition</b></font></th>
               <th><font size="+1" color="white"><b>Dependency</b></font></th>
               <th><font size="+1" color="white"><b>Dependency Value</b></font></th>
@@ -154,7 +155,6 @@
                 <td width="10%"><p><xsl:value-of select="value"/></p></td>
                 <td width="5%"><p><xsl:value-of select="unit"/><br/></p></td>
                 <td width="5%"><p><xsl:value-of select="type"/></p></td>
-                <td width="5%"><p><xsl:value-of select="uncertainty"/><br/></p></td>
                 <td width="22.5%"><p><xsl:value-of select="definition"/></p></td>
                 <td width="5%"><p><xsl:value-of select="dependency"/></p></td>
                 <td width="5%"><p><xsl:value-of select="dependencyValue"/></p></td>
