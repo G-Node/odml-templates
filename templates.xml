@@ -20,6 +20,20 @@
   </section>
 
   <section>
+    <type>template</type>
+    <name>Datacite/G-Node</name>
+    <definition>G-Node specific Datacite subset template.</definition>
+    <include>https://templates.g-node.org/datacite/datacite.gnode.xml</include>
+  </section>
+
+  <section>
+    <type>template</type>
+    <name>Datacite/CRCNS</name>
+    <definition>CRCNS specific Datacite subset template.</definition>
+    <include>https://templates.g-node.org/datacite/datacite.crcns.xml</include>
+  </section>
+
+  <section>
     <type>EEG-Setup</type>
     <name>BASIL</name>
     <definition>Brain-driven computer assistance system for people with limited mobility (BASIL) template.</definition>
