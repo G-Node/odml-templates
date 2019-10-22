@@ -14,13 +14,6 @@
 
   <section>
     <type>template</type>
-    <name>Datacite</name>
-    <definition>Datacite template.</definition>
-    <include>https://templates.g-node.org/datacite/datacite.xml</include>
-  </section>
-
-  <section>
-    <type>template</type>
     <name>Datacite/G-Node</name>
     <definition>G-Node specific Datacite subset template.</definition>
     <include>https://templates.g-node.org/datacite/datacite.gnode.xml</include>
