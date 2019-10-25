@@ -4,7 +4,7 @@
     <date>2019-03-28</date>
     <author>Petr Jezek</author>
     <section>
-        <type>template</type>
+        <type>template/eeg/setup</type>
         <name>EEG-Car-simulator</name>
 
         <property>
