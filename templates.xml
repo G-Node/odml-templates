@@ -6,42 +6,42 @@
   <author>German Neuroinformatics Node</author>
 
   <section>
-    <type>template</type>
+    <type>template/blackrock</type>
     <name>Blackrock</name>
     <definition>Blackrock recording setup template.</definition>
     <include>https://templates.g-node.org/blackrock/blackrock.xml</include>
   </section>
 
   <section>
-    <type>template</type>
-    <name>Datacite/G-Node</name>
-    <definition>G-Node specific Datacite subset template.</definition>
-    <include>https://templates.g-node.org/datacite/datacite.gnode.xml</include>
-  </section>
-
-  <section>
-    <type>template</type>
+    <type>template/datacite</type>
     <name>Datacite/CRCNS</name>
     <definition>CRCNS specific Datacite subset template.</definition>
     <include>https://templates.g-node.org/datacite/datacite.crcns.xml</include>
   </section>
 
   <section>
-    <type>EEG-Setup</type>
+    <type>template/datacite</type>
+    <name>Datacite/G-Node</name>
+    <definition>G-Node specific Datacite subset template.</definition>
+    <include>https://templates.g-node.org/datacite/datacite.gnode.xml</include>
+  </section>
+
+  <section>
+    <type>template/eeg/setup</type>
     <name>BASIL</name>
     <definition>Brain-driven computer assistance system for people with limited mobility (BASIL) template.</definition>
     <include>https://templates.g-node.org/eeg-setup/eeg-basil.xml</include>
   </section>
 
   <section>
-    <type>EEG-Setup</type>
+    <type>template/eeg/setup</type>
     <name>Car-sim</name>
     <definition>Driver attention car simulator during monotonous and dangerous traffic situations template.</definition>
     <include>https://templates.g-node.org/eeg-setup/eeg-car-sim.xml</include>
   </section>
 
   <section>
-    <type>EEG-Setup</type>
+    <type>template/eeg/setup</type>
     <name>ERP-eeg-response</name>
     <definition>Event-Related Potentials (ERP) template.</definition>
     <include>https://templates.g-node.org/eeg-setup/eeg-response.xml</include>
