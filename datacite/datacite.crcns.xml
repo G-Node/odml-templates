@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://templates.g-node.org/_resources/odmlTemplate.xsl" xmlns:odml="http://www.g-node.org/odml"?>
+<odML version="1.1">
+    <repository>https://templates.g-node.org/templates.xml</repository>
+    <version>1.1</version>
+    <date>2019-10-15</date>
+
+    <section>
+        <name>DataCite</name>
+        <type>data_reference</type>
+        <definition>A published dataset referenced by a DOI and registered with DataCite. The referenced dataset will contain either the odML file itself or the data the odML is annotating. This template is a subset of the full datacite schema used by the CRCNS.</definition>
+        <repository>https://templates.g-node.org/datacite.crcns.xml</repository>
+
+        <!-- #1 identifier -->
+        <section>
+            <name>identifier</name>
+            <type>datacite/identifier</type>
+            <definition>The Identifier is a unique string that identifies a resource.  For software, determine whether the identifier is for a specific version of a piece of software, (per the Force11 Software Citation Principles11), or for all versions.</definition>
+
+            <property>
+                <name>identifierType</name>
+                <type>string</type>
+                <value>DOI</value>
+                <definition>The type of Identifier.</definition>
+            </property>
+            <property>
+                <name>identifier</name>
+                <type>string</type>
+                <definition>The value of the identifier.</definition>
+            </property>
+        </section>
+
+        <!-- #2 creators -->
+        <section>
+            <name>creators</name>
+            <type>datacite/creators</type>
+
+            <section>
+                <name>creator #</name>
+                <type>datacite/creator</type>
+                <definition>The main researchers involved in producing the data, or the authors of the publication, in priority order. To supply multiple creators, repeat this property.</definition>
+
+                <property>
+                    <name>creatorName</name>
+                    <type>string</type>
+                    <definition>The full name of the creator.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #3 Title -->
+        <section>
+            <name>titles</name>
+            <type>datacite/titles</type>
+
+            <section>
+                <name>title #</name>
+                <type>datacite/title</type>
+                <definition>A name or title by which a resource is known. May be the title of a dataset or the name of a piece of software.</definition>
+
+                <property>
+                    <name>title</name>
+                    <type>string</type>
+                    <definition>Value of title</definition>
+                </property>
+                <property>
+                    <name>titleType</name>
+                    <type>string</type>
+                    <value>[AlternativeTitle, Subtitle, TranslatedTitle, Other]</value>
+                    <definition>The type of Title.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #4 Publisher -->
+        <property>
+            <name>publisher</name>
+            <type>string</type>
+            <definition>The name of the entity that holds, archives, publishes prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role. For software, use Publisher for the code repository. If there is an entity other than a code repository, that "holds, archives, publishes, prints, distributes, releases, issues, or produces" the code, use the property Contributor/contributorType/hostingInstitution for the code repository.</definition>
+        </property>
+
+        <!-- #5 PublicationYear -->
+        <property>
+            <name>publicationYear</name>
+            <type>string</type>
+            <definition>The year when the data was or will be made publicly available.  In the case of resources such as software or dynamic data where there may be multiple releases in one year, include the Date/dateType/dateInformation property and sub-properties to provide more information about the publication or release date details.</definition>
+        </property>
+
+        <!-- #6 Subject  -->
+        <section>
+            <name>subjects</name>
+            <type>datacite/subjects</type>
+
+            <section>
+                <name>subject #</name>
+                <type>datacite/subject</type>
+                <definition>Subject, keyword, classification code, or key phrase describing the resource.</definition>
+
+                <property>
+                    <name>subject</name>
+                    <type>string</type>
+                    <definition>Value of the subject.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #9 Language -->
+        <property>
+            <name>language</name>
+            <type>string</type>
+            <definition>The primary language of the resource. Allowed values are taken from IETF BCP 47, ISO 639-1 language codes.Examples: en, de, fr</definition>
+        </property>
+
+        <!-- #10 ResourceType -->
+        <section>
+            <name>resourceType</name>
+            <type>datacite/resource_type</type>
+            <definition>A description of the resource. The format is open, but the preferred format is a single term of some detail so that a pair can be formed with the sub-property. Text formats can be free-text OR terms from the CASRAI Publications resource type list.</definition>
+
+            <property>
+                <name>resourceTypeGeneral</name>
+                <type>string</type>
+                <value>[Audiovisual, Collection, DataPaper, Dataset, Event, Image, InteractiveResource, Model, PhysicalObject, Service, Software, Sound, Text, Workflow, Other]</value>
+                <definition>The general type of a resource.</definition>
+            </property>
+            <property>
+                <name>resourceType</name>
+                <type>string</type>
+                <definition>Value of the resourceType</definition>
+            </property>
+        </section>
+
+        <!-- #13 size -->
+        <section>
+            <name>sizes</name>
+            <type>datacite/sizes</type>
+
+            <section>
+                <name>size #</name>
+                <type>datacite/size</type>
+                <definition>Size (e.g. bytes, pages, inches, etc.) or duration (extent), e.g. hours, minutes, days, etc., of a resource.</definition>
+
+                <property>
+                    <name>size</name>
+                    <type>string</type>
+                    <definition>Value of size.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #14 format -->
+        <section>
+            <name>formats</name>
+            <type>datacite/formats</type>
+
+            <section>
+                <name>format #</name>
+                <type>datacite/format</type>
+                <definition>Technical format of the resource.</definition>
+
+                <property>
+                    <name>format</name>
+                    <type>string</type>
+                    <definition>Value of format.</definition>
+                </property>
+            </section>
+        </section>
+
+        <!-- #15 version -->
+        <property>
+            <name>version</name>
+            <type>string</type>
+            <definition>The version number of the resource. Suggested practice: track major_version.minor_version. Register a new identifier for a major version change.</definition>
+        </property>
+
+        <!-- #17 description -->
+        <section>
+            <name>descriptions</name>
+            <type>datacite/descriptions</type>
+
+            <section>
+                <name>description #</name>
+                <type>datacite/description</type>
+                <definition>All additional information that does not fit in any of the other categories. May be used for technical information.</definition>
+
+                <property>
+                    <name>description</name>
+                    <type>string</type>
+                    <value>Value of description.</value>
+                </property>
+                <property>
+                    <name>descriptionType</name>
+                    <type>string</type>
+                    <value>[Abstract, Methods, Series, Information, TableOfContents ,TechnicalInfo, Other]</value>
+                    <definition>The type of the Description. If Description is used, descriptionType is mandatory.</definition>
+                </property>
+            </section>
+        </section>
+    </section>
+</odML>
